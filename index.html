@@ -1,0 +1,517 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Empire Roofing Systems - Flat Roofing Specialists - Kettering, Birmingham & London</title>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#14181c; --mut:#57616c; --line:#e2e6ec; --bg:#f8fafb; --panel:#fff;
+  --deep:#12283f; --deep2:#1d3b58; --acc:#2f6fbf; --acc2:#7fb4e3; --ok:#1f7a45;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:Bitter,Georgia,serif;font-weight:700;line-height:1.16;letter-spacing:-.014em;text-wrap:balance}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+.demobar{background:#0d1117;color:#e6edf3;font-size:12.5px;text-align:center;padding:8px 14px}
+.demobar b{color:#f0b13c}
+.urg{background:#8a1c1c;color:#fff;text-align:center;font-size:13.5px;padding:9px;font-weight:500}
+.urg a{color:#fff}
+nav{position:sticky;top:0;z-index:60;background:rgba(248,250,251,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.navin{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:13px 0}
+.logo{font-family:Bitter,serif;font-weight:700;font-size:19px}
+.logo span{color:var(--acc)}
+.navl{display:flex;gap:20px;font-size:14.5px;font-weight:500}
+.navl a{color:var(--mut);text-decoration:none}.navl a:hover{color:var(--deep2)}
+.navl a.on{color:var(--deep2);font-weight:700}
+.call{display:inline-flex;align-items:center;gap:8px;background:var(--deep2);color:#fff;text-decoration:none;font-weight:600;font-size:14.5px;padding:10px 17px;border-radius:8px;white-space:nowrap}
+@media(max-width:900px){.navl{display:none}}
+.hero{position:relative;background:linear-gradient(155deg,var(--deep),var(--deep2));color:#eef3f8;overflow:hidden}
+.hero::after{content:"";position:absolute;inset:0;opacity:.13;
+  background:repeating-linear-gradient(78deg,transparent 0 38px,rgba(255,255,255,.55) 38px 40px),
+             repeating-linear-gradient(-12deg,transparent 0 38px,rgba(255,255,255,.3) 38px 39px)}
+.heroin{position:relative;z-index:2;display:grid;grid-template-columns:1.06fr .94fr;gap:42px;align-items:center;padding:56px 0 62px}
+@media(max-width:980px){.heroin{grid-template-columns:1fr;gap:28px;padding:38px 0 44px}}
+.eyeb{display:inline-block;font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:var(--acc2);border:1px solid rgba(255,255,255,.28);padding:5px 12px;border-radius:999px;margin-bottom:17px}
+.hero h1{font-size:clamp(31px,5vw,48px);margin-bottom:14px}
+.hero h1 em{font-style:normal;color:var(--acc2)}
+.hero .lede{font-size:17px;color:#c6d3df;max-width:520px}
+.ticks{list-style:none;margin-top:20px;display:grid;gap:9px}
+.ticks li{display:flex;gap:10px;font-size:15.5px;color:#dde6ee}
+.ticks svg{flex:0 0 18px;margin-top:4px;fill:var(--acc2)}
+.form{background:var(--panel);border-radius:14px;padding:24px;box-shadow:0 20px 54px rgba(0,0,0,.3);color:var(--ink)}
+.form h3{font-size:20px;margin-bottom:4px}
+.form .fs{font-size:13.5px;color:var(--mut);margin-bottom:14px}
+label{display:block;font-size:12px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--mut);margin:12px 0 5px}
+select,input{width:100%;font-family:inherit;font-size:15px;color:var(--ink);background:#fbfcfd;border:1px solid var(--line);border-radius:8px;padding:11px 12px}
+select:focus,input:focus{outline:2px solid var(--acc);outline-offset:1px;border-color:transparent}
+.chk{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
+.chk label{display:inline-flex;align-items:center;gap:7px;margin:0;padding:8px 12px;border:1px solid var(--line);border-radius:999px;background:#fbfcfd;font-size:13.5px;font-weight:500;letter-spacing:0;text-transform:none;color:var(--ink);cursor:pointer}
+.chk input{width:auto;padding:0;margin:0}
+.btn{width:100%;margin-top:18px;background:var(--acc);color:#fff;border:0;border-radius:9px;padding:14px;font-family:Bitter,serif;font-size:16px;font-weight:700;cursor:pointer}
+.btn:hover{filter:brightness(.88)}
+.hint{font-size:12px;color:var(--mut);margin-top:10px;text-align:center}
+.out{display:none;margin-top:15px;border-radius:10px;padding:15px 16px;font-size:14.5px;border:1px solid}
+.out.show{display:block}
+.out b{display:block;font-family:Bitter,serif;font-size:16.5px;margin-bottom:5px}
+.o-hi{background:#eef6f0;border-color:#bedcc6;color:#1d5734}
+.o-md{background:#fdf6ea;border-color:#ecdcb2;color:#775413}
+.o-lo{background:#f3f5f7;border-color:#dde2e7;color:#48515a}
+.o-urg{background:#fdeeee;border-color:#f0c6c4;color:#8a1c1c}
+.trust{background:#0e141a;color:#b6c2cd;padding:15px 0}
+.trustin{display:flex;flex-wrap:wrap;justify-content:center;gap:11px 34px;font-size:13.5px}
+.trustin b{color:var(--acc2);font-weight:700}
+section{padding:58px 0}
+.sh{text-align:center;max-width:680px;margin:0 auto 34px}
+.sh .kick{font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--acc);font-weight:700;margin-bottom:10px}
+.sh h2{font-size:clamp(25px,3.4vw,33px);margin-bottom:11px}
+.sh p{color:var(--mut);font-size:16.5px}
+.band{background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:17px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:13px;overflow:hidden}
+.ctop{height:100px;position:relative;background:linear-gradient(140deg,var(--deep),var(--deep2))}
+.ctop::after{content:"";position:absolute;inset:0;opacity:.24;background:repeating-linear-gradient(78deg,transparent 0 15px,rgba(255,255,255,.5) 15px 16px)}
+.cbody{padding:17px}.cbody h3{font-size:18px;margin-bottom:6px}
+.cbody p{font-size:14.5px;color:var(--mut)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media(max-width:820px){.two{grid-template-columns:1fr}}
+.box{background:var(--panel);border:1px solid var(--line);border-radius:13px;padding:24px}
+.box.pri{background:linear-gradient(160deg,var(--deep),var(--deep2));color:#eef3f8;border-color:var(--deep2)}
+.box h3{font-size:20px;margin-bottom:10px}
+.box ul{margin:0 0 0 19px;font-size:15px;color:var(--mut)}
+.box.pri ul{color:#c6d3df}
+.box li{margin-bottom:8px}
+.tagp{display:inline-block;font-size:11px;letter-spacing:.11em;text-transform:uppercase;font-weight:700;background:var(--acc2);color:#0e1a26;padding:4px 10px;border-radius:999px;margin-bottom:12px}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(205px,1fr));gap:16px}
+.fact{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:20px}
+.fact .k{font-size:11.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--mut);font-weight:700;margin-bottom:7px}
+.fact .v{font-family:Bitter,serif;font-size:22px;font-weight:700;color:var(--deep2)}
+.fact .n{font-size:13.5px;color:var(--mut);margin-top:5px}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:22px;counter-reset:s}
+.step{counter-increment:s;position:relative;padding-left:50px}
+.step::before{content:counter(s);position:absolute;left:0;top:0;width:37px;height:37px;border-radius:50%;background:var(--deep2);color:#fff;font-family:Bitter,serif;font-weight:700;font-size:17px;display:grid;place-items:center}
+.step h3{font-size:17.5px;margin-bottom:5px}.step p{font-size:14.5px;color:var(--mut)}
+.revs{display:grid;grid-template-columns:repeat(auto-fit,minmax(268px,1fr));gap:17px}
+.rev{background:var(--panel);border:1px solid var(--line);border-radius:13px;padding:20px}
+.stars{color:#e0a32e;font-size:15.5px;letter-spacing:2px}
+.rev p{font-size:14.8px;color:var(--mut);margin:9px 0 12px;font-style:italic}
+.rev .who{font-size:13.5px;font-weight:700}
+.rev .who span{display:block;font-weight:400;color:var(--mut);font-size:12.5px;margin-top:2px}
+.ratebar{display:flex;align-items:center;justify-content:center;gap:14px;margin-bottom:28px;flex-wrap:wrap}
+.ratebig{font-family:Bitter,serif;font-size:42px;font-weight:700;color:var(--deep2)}
+.ratetxt{font-size:14.5px;color:var(--mut);text-align:left}
+.badges{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.bdg{background:var(--panel);border:1px dashed #b9c3d1;border-radius:11px;padding:14px 20px;text-align:center;min-width:140px}
+.bdg b{display:block;font-family:Bitter,serif;font-size:16px;color:var(--deep2)}
+.bdg span{font-size:11.5px;color:var(--mut);letter-spacing:.05em;text-transform:uppercase}
+.areas{display:flex;flex-wrap:wrap;gap:9px;justify-content:center;margin-top:20px}
+.areas span{background:var(--panel);border:1px solid var(--line);border-radius:999px;padding:8px 15px;font-size:14px;color:var(--mut)}
+.cta2{background:linear-gradient(155deg,var(--deep),var(--deep2));color:#eef3f8;text-align:center;padding:58px 0}
+.cta2 h2{font-size:clamp(25px,3.4vw,33px);margin-bottom:11px}
+.cta2 p{color:#c6d3df;font-size:16.5px;max-width:560px;margin:0 auto 22px}
+.cta2 .call{font-size:16px;padding:14px 26px;background:var(--acc2);color:#0e1a26}
+footer{background:#0b1016;color:#87929d;font-size:13.5px;padding:32px 0}
+.fgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:24px}
+footer h4{color:#e7edf3;font-size:12.5px;letter-spacing:.11em;text-transform:uppercase;margin-bottom:10px}
+footer a{color:#87929d;text-decoration:none;display:block;margin-bottom:6px}
+footer a:hover{color:var(--acc2)}
+.fnote{border-top:1px solid #1b232c;padding-top:18px;margin-top:20px;font-size:12.5px;color:#6b7681;line-height:1.65}
+a:focus-visible,button:focus-visible,select:focus-visible,input:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+</style>
+<style>
+.hero{background:linear-gradient(150deg,rgba(9,18,28,.94),rgba(16,40,58,.80)),url('img/g2.jpg') center 50%/cover}
+.hero::after{opacity:.05}
+.ctop{background-size:cover;background-position:center;height:190px}
+@media(max-width:700px){.ctop{height:160px}}
+.ctop::after{opacity:.1}
+.gal{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:13px}
+.gal div{aspect-ratio:7/5;border-radius:12px;background-size:cover;background-position:center;border:1px solid var(--line)}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:center}
+@media(max-width:820px){.split{grid-template-columns:1fr;gap:22px}}
+.split .pic{aspect-ratio:7/5;border-radius:14px;background-size:cover;background-position:center}
+.cta2{background:linear-gradient(150deg,rgba(9,18,28,.94),rgba(16,40,58,.86)),url('img/g5.jpg') center 50%/cover}
+.nicei{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);border-radius:8px;padding:7px 13px;font-size:13.5px;font-weight:600;margin-top:16px}
+.offices{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:14px}
+.off{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:20px}
+.off b{display:block;font-size:17px;margin-bottom:4px}
+.off a{display:block;font-size:20px;font-weight:700;color:var(--acc);text-decoration:none;margin-top:6px}
+.faqs{max-width:820px;margin:0 auto}
+.faq{background:var(--panel);border:1px solid var(--line);border-radius:12px;margin-bottom:10px;overflow:hidden}
+.faq summary{cursor:pointer;list-style:none;padding:16px 18px;font-weight:600;font-size:16px;display:flex;justify-content:space-between;gap:14px;align-items:center}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-size:22px;color:var(--acc);font-weight:400;line-height:1}
+.faq[open] summary::after{content:"\2212"}
+.faq p{padding:0 18px 16px;color:var(--mut);font-size:15px;margin:0}
+.callbar{display:none}
+@media(max-width:820px){
+ .callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:90;background:var(--deep2);color:#fff;align-items:center;justify-content:center;gap:10px;padding:13px;font-weight:700;font-size:16px;text-decoration:none;box-shadow:0 -4px 18px rgba(0,0,0,.28)}
+ body{padding-bottom:56px}
+}
+</style>
+
+<div class="demobar">This is a <b>concept website</b> built by AG1 Consulting for Empire Roofing Systems Ltd. It is not a live site and no form on it sends anywhere.</div>
+
+<nav>
+  <div class="wrap navin">
+    <div class="logo">Empire <span>Roofing Systems</span></div>
+    <div class="navl">
+      <a href="#commercial" class="on">Commercial</a>
+      <a href="#services">Services</a>
+      <a href="#maintenance">Maintenance</a>
+      <a href="#careers">Join Us</a>
+      <a href="#work">Our Work</a>
+      <a href="#faq">FAQ</a>
+    </div>
+    <a class="call" href="tel:+441536520908">&#9742; 01536 520 908</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap heroin">
+    <div>
+      <div class="eyeb">NFRC Member &middot; Kettering &middot; Birmingham &middot; London</div>
+      <h1>Flat roofs that are still watertight in <em>twenty years</em>.</h1>
+      <p class="lede">Commercial, industrial and domestic flat roofing across the Midlands and London.
+      Built-up felt, flame-free systems, liquid coatings and green roofs &mdash; with manufacturer
+      guarantees of up to thirty years behind the work.</p>
+      <ul class="ticks">
+        <li><svg viewBox="0 0 20 20" width="18" height="18"><path d="M7.6 14.2 3.4 10l1.4-1.4 2.8 2.8 7.6-7.6L16.6 5z"/></svg><span>Members of the National Federation of Roofing Contractors</span></li>
+        <li><svg viewBox="0 0 20 20" width="18" height="18"><path d="M7.6 14.2 3.4 10l1.4-1.4 2.8 2.8 7.6-7.6L16.6 5z"/></svg><span>Guarantees of 10 to 30 years depending on the system</span></li>
+        <li><svg viewBox="0 0 20 20" width="18" height="18"><path d="M7.6 14.2 3.4 10l1.4-1.4 2.8 2.8 7.6-7.6L16.6 5z"/></svg><span>Three offices &mdash; Kettering, Birmingham and London</span></li>
+        <li><svg viewBox="0 0 20 20" width="18" height="18"><path d="M7.6 14.2 3.4 10l1.4-1.4 2.8 2.8 7.6-7.6L16.6 5z"/></svg><span>Refurbishment first &mdash; we replace only when replacing is genuinely cheaper</span></li>
+      </ul>
+      <div class="nicei">&#9873; Fully insured flat roofing specialists</div>
+    </div>
+
+    <form class="form" id="quote" onsubmit="return route(event)">
+      <h3>Book a roof survey</h3>
+      <div class="fs">Tell us the building and we will tell you whether it needs refurbishing or replacing.</div>
+
+      <label for="job">What do you need?</label>
+      <select id="job">
+        <option value="">Choose one&hellip;</option>
+        <option value="leak">A roof that is leaking now</option>
+        <option value="refurb">Refurbishment of an existing flat roof</option>
+        <option value="new">A new flat roof or new build</option>
+        <option value="maint">A maintenance package</option>
+        <option value="green">Green roof or liquid coating</option>
+        <option value="job">I am a roofer looking for work</option>
+      </select>
+
+      <label for="prop">What kind of building?</label>
+      <select id="prop">
+        <option value="">Choose one&hellip;</option>
+        <option value="comm">Commercial or industrial</option>
+        <option value="block">Managed block or estate</option>
+        <option>Domestic extension or garage</option>
+        <option>Not sure yet</option>
+      </select>
+
+      <label>How soon?</label>
+      <div class="chk">
+        <label><input type="radio" name="u" checked> Planning</label>
+        <label><input type="radio" name="u"> This month</label>
+        <label><input type="radio" name="u"> Urgent</label>
+      </div>
+
+      <label for="town">Where is the building?</label>
+      <input id="town" placeholder="Kettering, Birmingham, London&hellip;">
+
+      <label for="ph">Best number to reach you</label>
+      <input id="ph" placeholder="07000 000000">
+
+      <button class="btn" type="submit">Request a survey</button>
+      <div class="hint">If water is coming in today, ring rather than fill this in.</div>
+
+      <div class="out" id="out"></div>
+    </form>
+  </div>
+</header>
+
+<div class="trust">
+  <div class="wrap trustin">
+    <div><b>NFRC</b> member</div>
+    <div><b>Up to 30 yrs</b> guarantee</div>
+    <div><b>3 offices</b> Kettering &middot; B'ham &middot; London</div>
+    <div><b>Commercial</b> &amp; domestic</div>
+    <div><b>Fully</b> insured</div>
+  </div>
+</div>
+
+<section id="commercial">
+  <div class="wrap">
+    <div class="split">
+      <div>
+        <div class="kick" style="font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--acc);font-weight:700;margin-bottom:10px">Commercial &amp; industrial</div>
+        <h2 style="font-size:clamp(25px,3.4vw,33px);margin-bottom:12px">Refurbish it if we can. Replace it only if we must.</h2>
+        <p style="color:var(--mut);font-size:16.5px;margin-bottom:14px">Every commercial flat roof
+        eventually breaks down. Not every one needs tearing off. If the existing deck has not perished,
+        refurbishment is faster, cheaper and far less disruptive to whatever is happening underneath it.</p>
+        <p style="color:var(--mut);font-size:16.5px;margin-bottom:14px">We survey it, tell you which of
+        the two it is, and show you why. <b>We do not sell you a replacement you do not need.</b></p>
+        <ul class="ticks" style="color:var(--ink)">
+          <li><svg viewBox="0 0 20 20" width="18" height="18" style="fill:var(--acc)"><path d="M7.6 14.2 3.4 10l1.4-1.4 2.8 2.8 7.6-7.6L16.6 5z"/></svg><span style="color:var(--ink)">Warehouses, units, offices and managed blocks</span></li>
+          <li><svg viewBox="0 0 20 20" width="18" height="18" style="fill:var(--acc)"><path d="M7.6 14.2 3.4 10l1.4-1.4 2.8 2.8 7.6-7.6L16.6 5z"/></svg><span style="color:var(--ink)">Work phased around your operation where needed</span></li>
+          <li><svg viewBox="0 0 20 20" width="18" height="18" style="fill:var(--acc)"><path d="M7.6 14.2 3.4 10l1.4-1.4 2.8 2.8 7.6-7.6L16.6 5z"/></svg><span style="color:var(--ink)">Drone survey so you can see the roof you are paying for</span></li>
+          <li><svg viewBox="0 0 20 20" width="18" height="18" style="fill:var(--acc)"><path d="M7.6 14.2 3.4 10l1.4-1.4 2.8 2.8 7.6-7.6L16.6 5z"/></svg><span style="color:var(--ink)">Manufacturer-backed guarantees on the completed system</span></li>
+        </ul>
+      </div>
+      <div class="pic" style="background-image:url('img/commercial.jpg')"></div>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="services">
+  <div class="wrap">
+    <div class="sh">
+      <div class="kick">What we install</div>
+      <h2>Flat roofing, and the things that go around it</h2>
+      <p>We work with world-leading felt manufacturers, which is what makes the long guarantees possible.</p>
+    </div>
+    <div class="cards">
+      <div class="card"><div class="ctop" style="background-image:url('img/flat.jpg')"></div><div class="cbody">
+        <h3>Built-up felt &amp; warm roofs</h3>
+        <p>The core of what we do. Multi-layer systems specified for the building and the span, not for the catalogue.</p></div></div>
+      <div class="card"><div class="ctop" style="background-image:url('img/g3.jpg')"></div><div class="cbody">
+        <h3>Flame-free felt systems</h3>
+        <p>Torch-free installation where hot works are restricted, near occupied buildings or on sensitive sites.</p></div></div>
+      <div class="card"><div class="ctop" style="background-image:url('img/green.jpg')"></div><div class="cbody">
+        <h3>Green roofs</h3>
+        <p>Living roof build-ups, from the waterproofing layer upward, with the drainage designed in rather than added later.</p></div></div>
+      <div class="card"><div class="ctop" style="background-image:url('img/g1.jpg')"></div><div class="cbody">
+        <h3>Liquid coating systems</h3>
+        <p>Seamless liquid-applied waterproofing, often the right answer on a complex roof with a lot of detail to work around.</p></div></div>
+      <div class="card"><div class="ctop" style="background-image:url('img/g4.jpg')"></div><div class="cbody">
+        <h3>Repairs &amp; lead work</h3>
+        <p>Leak tracing, flashings, upstands and traditional lead work &mdash; the details where most flat roofs actually fail.</p></div></div>
+      <div class="card"><div class="ctop" style="background-image:url('img/g6.jpg')"></div><div class="cbody">
+        <h3>Fascias &amp; guttering</h3>
+        <p>The rainwater goods that decide whether the roof you just paid for gets to do its job.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="maintenance">
+  <div class="wrap">
+    <div class="sh">
+      <div class="kick">Maintenance packages</div>
+      <h2>The cheapest flat roof is the one that never gets to fail.</h2>
+      <p>Flat roofs do not fail all at once. They fail at a detail, quietly, for a season, and then through a ceiling.</p>
+    </div>
+    <div class="two">
+      <div class="box pri">
+        <div class="tagp">Planned maintenance</div>
+        <h3>Scheduled inspection and upkeep</h3>
+        <ul>
+          <li>Scheduled visits through the year, booked in advance</li>
+          <li>Outlets, gutters and drainage cleared before autumn does it for you</li>
+          <li>Flashings, upstands and laps checked &mdash; where flat roofs actually fail</li>
+          <li>A written condition record after each visit</li>
+          <li>Small repairs caught while they are still small repairs</li>
+          <li>Priority response if something does go wrong</li>
+        </ul>
+      </div>
+      <div class="box">
+        <div class="tagp">Why building owners take one</div>
+        <h3>What it protects</h3>
+        <ul>
+          <li>The guarantee &mdash; most manufacturer warranties expect the roof to be maintained</li>
+          <li>The ceiling, the stock and whatever is under the roof</li>
+          <li>The budget, because planned work is quoted and emergency work is not</li>
+          <li>The building's life, by adding years to a roof rather than replacing it early</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="careers">
+  <div class="wrap">
+    <div class="sh">
+      <div class="kick">Join the team</div>
+      <h2>We are hiring flat roofers.</h2>
+      <p>If you are good at this and you are tired of being treated like you are not, have a read.</p>
+    </div>
+    <div class="two">
+      <div class="box pri">
+        <div class="tagp">What we are looking for</div>
+        <h3>Experienced flat roofers &amp; improvers</h3>
+        <ul>
+          <li>Built-up felt experience, or liquid systems, or both</li>
+          <li>People who care what the detailing looks like when nobody is checking</li>
+          <li>Improvers who want to be taught properly, not just handed a torch</li>
+          <li>Kettering, Birmingham and London</li>
+        </ul>
+      </div>
+      <div class="box">
+        <div class="tagp">What you get</div>
+        <h3>Why this is a better seat</h3>
+        <ul>
+          <li>Real commercial and industrial contracts, not just chasing domestic call-outs</li>
+          <li>An NFRC member firm &mdash; standards are the point, not an inconvenience</li>
+          <li>Manufacturer-approved systems and the training that comes with them</li>
+          <li>Work across three regions, so the work does not dry up when one does</li>
+          <li>Paid properly and paid on time</li>
+        </ul>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:26px">
+      <a class="call" href="tel:+447788798466" style="font-size:18px">&#9742; Call or text 07788 798 466</a>
+      <p style="color:var(--mut);margin-top:12px;font-size:15px">Name and a number is enough. No CV needed to start a conversation.</p>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap">
+    <div class="sh">
+      <div class="kick">Our work</div>
+      <h2>Real roofs. Our own photographs.</h2>
+      <p>Every picture on this page is our own work on our own jobs, including our drone survey shots.</p>
+    </div>
+    <div class="gal">
+      <div style="background-image:url('img/g2.jpg')"></div>
+      <div style="background-image:url('img/commercial.jpg')"></div>
+      <div style="background-image:url('img/flat.jpg')"></div>
+      <div style="background-image:url('img/g5.jpg')"></div>
+      <div style="background-image:url('img/g1.jpg')"></div>
+      <div style="background-image:url('img/g3.jpg')"></div>
+      <div style="background-image:url('img/g4.jpg')"></div>
+      <div style="background-image:url('img/green.jpg')"></div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="sh">
+      <div class="kick">How it works</div>
+      <h2>Four steps, and an honest answer at step two</h2>
+    </div>
+    <div class="steps">
+      <div class="step"><h3>We survey the roof</h3><p>On foot and, where it helps, from the air. You see what we see.</p></div>
+      <div class="step"><h3>Refurbish or replace</h3><p>We tell you which, and why, before anyone talks about price.</p></div>
+      <div class="step"><h3>Specified and quoted</h3><p>The system, the build-up and the guarantee that comes with it, in writing.</p></div>
+      <div class="step"><h3>Installed and signed off</h3><p>Manufacturer-backed guarantee, and a maintenance schedule if you want one.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sh">
+      <div class="kick">Our offices</div>
+      <h2>Three bases, one standard</h2>
+    </div>
+    <div class="offices">
+      <div class="off"><b>Kettering</b><span style="color:var(--mut);font-size:14.5px">Head office &middot; Northamptonshire</span><a href="tel:+441536520908">01536 520 908</a></div>
+      <div class="off"><b>Birmingham</b><span style="color:var(--mut);font-size:14.5px">West Midlands</span><a href="tel:+441212381917">0121 238 1917</a></div>
+      <div class="off"><b>London</b><span style="color:var(--mut);font-size:14.5px">Greater London</span><a href="tel:+442030924353">0203 092 4353</a></div>
+      <div class="off"><b>Mobile</b><span style="color:var(--mut);font-size:14.5px">Surveys &amp; recruitment</span><a href="tel:+447788798466">07788 798 466</a></div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="sh">
+      <div class="kick">Straight answers</div>
+      <h2>What building owners ask us</h2>
+    </div>
+    <div class="faqs">
+      <details class="faq"><summary>Can my flat roof be refurbished, or does it need replacing?</summary><p>It depends whether the existing build-up has perished. If it has not, refurbishment is usually faster, cheaper and less disruptive. A survey answers it properly &mdash; and we will tell you when replacement genuinely is the better value option rather than selling you the bigger job by default.</p></details>
+      <details class="faq"><summary>How long is the guarantee?</summary><p>Between 10 and 30 years depending on the system specified and the manufacturer behind it. The guarantee is part of the specification conversation, not an afterthought &mdash; and most manufacturer warranties expect the roof to be maintained, which is why we offer maintenance packages.</p></details>
+      <details class="faq"><summary>What does NFRC membership actually mean?</summary><p>The National Federation of Roofing Contractors is the trade body for UK roofing. Membership means a firm is vetted against the federation's standards. For commercial specifiers it is often a requirement on the tender; for everyone else it is a reasonable shorthand for "this firm is accountable to somebody".</p></details>
+      <details class="faq"><summary>Do you do domestic work as well as commercial?</summary><p>Yes. Extensions, garages, dormers and outbuildings. Commercial and industrial refurbishment is the specialism, but the same crews and the same standards apply to a garage roof.</p></details>
+      <details class="faq"><summary>What is a flame-free system and do I need one?</summary><p>It is a felt system installed without a torch. It is used where hot works are restricted &mdash; occupied buildings, timber structures, sensitive sites, or where an insurer requires it. If that applies to your building we will say so at survey.</p></details>
+      <details class="faq"><summary>Can you work around our operation?</summary><p>Usually yes, and on commercial sites it is normally the whole point. Phasing, out-of-hours sections and staged handovers are all normal on occupied buildings.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="cta2">
+  <div class="wrap">
+    <h2>Get the roof surveyed before the ceiling tells you about it.</h2>
+    <p>Commercial, industrial and domestic flat roofing across Kettering, Birmingham and London.</p>
+    <a class="call" href="tel:+441536520908">&#9742; Call 01536 520 908</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <h4>Empire Roofing Systems</h4>
+        <a href="tel:+441536520908">Kettering &mdash; 01536 520 908</a>
+        <a href="tel:+441212381917">Birmingham &mdash; 0121 238 1917</a>
+        <a href="tel:+442030924353">London &mdash; 0203 092 4353</a>
+      </div>
+      <div>
+        <h4>Commercial</h4>
+        <a href="#commercial">Flat roof refurbishment</a>
+        <a href="#commercial">New installations</a>
+        <a href="#maintenance">Maintenance packages</a>
+        <a href="#services">Liquid coatings</a>
+      </div>
+      <div>
+        <h4>Systems</h4>
+        <a href="#services">Built-up felt &amp; warm roofs</a>
+        <a href="#services">Flame-free felt</a>
+        <a href="#services">Green roofs</a>
+        <a href="#services">Lead work &amp; guttering</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="#careers">Join the team</a>
+        <a href="#work">Our work</a>
+        <a href="#faq">FAQ</a>
+        <a href="#top">NFRC member</a>
+      </div>
+    </div>
+    <div class="fnote">
+      <b>Concept demonstration &mdash; not a live website.</b> This page was produced by AG1 Consulting
+      to show Empire Roofing Systems Ltd one way their website could work. No form on this page submits
+      anywhere and the instant response shown is a demonstration of routing only &mdash; it is not a
+      quotation, an estimate or an offer. Company name, the three office telephone numbers, the mobile
+      number, the service list, the 10&ndash;30 year guarantee range, the NFRC membership and all
+      photography are taken from Empire Roofing Systems' own published website and remain their
+      property. <b>The maintenance package described, the recruitment section and everything it
+      offers, the four-step process, the FAQ answers and the service descriptions are illustrative
+      wording written by AG1 to demonstrate the layout &mdash; none of it has been confirmed with
+      Empire Roofing Systems, the company does not currently advertise a maintenance package or any
+      vacancy on its website, and none of it should be read as a commitment the business has made or
+      as an actual job advertisement.</b> In particular, no rate of pay, employment term or benefit is
+      stated or implied anywhere on this page. <b>No prices, ratings, review counts or customer
+      testimonials appear anywhere on this page</b>, and no accreditation beyond the NFRC membership
+      Empire publishes itself is claimed. The description of NFRC membership is general and is not a
+      statement about this company's current membership status, which we have not verified against the
+      NFRC register.
+    </div>
+  </div>
+</footer>
+
+<script>
+function route(e){
+  e.preventDefault();
+  var j=document.getElementById('job').value,
+      p=document.getElementById('prop').value,
+      o=document.getElementById('out'),
+      t=(document.getElementById('town').value||'your area').trim().replace(/[<>]/g,'');
+  var m={
+    leak:['o-urg','Call 01536 520 908 now','If water is coming in, do not wait on a form. Ring us and we will get somebody to look at it.'],
+    refurb:['o-hi','Refurbishment survey','We will tell you whether the existing build-up can be saved. Very often it can, and that is the cheaper answer.'],
+    'new':['o-hi','New flat roof enquiry','We will specify the system for the building and the span, and tell you what guarantee comes with each option.'],
+    maint:['o-hi','Maintenance package enquiry','We will look at the roof, set a schedule around it, and put the condition record in writing after every visit.'],
+    green:['o-md','Green roof or liquid system','Both need the waterproofing layer designing properly first. Tell us about the deck and the detail.'],
+    job:['o-hi','Good &mdash; we are hiring','Call or text 07788 798 466. A name and a number is enough to start; we can talk about the rest on the phone.']
+  };
+  var r=m[j]||['o-lo','Enquiry received','Tell us about the building when we call and we will come prepared.'];
+  var extra='';
+  if(p==='comm') extra=' <span style="display:block;margin-top:8px">Commercial and industrial: we can phase the work around whatever is happening underneath the roof.</span>';
+  else if(p==='block') extra=' <span style="display:block;margin-top:8px">Managed blocks: we can provide the condition record and specification your leaseholders will want to see.</span>';
+  o.className='out show '+r[0];
+  o.innerHTML='<b>'+r[1]+'</b>'+r[2]+extra+'<span style="display:block;margin-top:8px;opacity:.85">Covering '+t+' &mdash; Kettering, Birmingham &amp; London</span>';
+  o.scrollIntoView({behavior:'smooth',block:'nearest'});
+  return false;
+}
+</script>
+
+<a class="callbar" href="tel:+441536520908">&#9742; Call 01536 520 908</a>
