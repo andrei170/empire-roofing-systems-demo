@@ -1,0 +1,444 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Empire Roofing Systems - We Are Hiring Flat Roofers - Kettering, Birmingham & London</title>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#14181c; --mut:#57616c; --line:#e2e6ec; --bg:#f8fafb; --panel:#fff;
+  --deep:#12283f; --deep2:#1d3b58; --acc:#2f6fbf; --acc2:#7fb4e3; --ok:#1f7a45;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:Bitter,Georgia,serif;font-weight:700;line-height:1.16;letter-spacing:-.014em;text-wrap:balance}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+.demobar{background:#0d1117;color:#e6edf3;font-size:12.5px;text-align:center;padding:8px 14px}
+.demobar b{color:#f0b13c}
+.urg{background:#8a1c1c;color:#fff;text-align:center;font-size:13.5px;padding:9px;font-weight:500}
+.urg a{color:#fff}
+nav{position:sticky;top:0;z-index:60;background:rgba(248,250,251,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.navin{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:13px 0}
+.logo{font-family:Bitter,serif;font-weight:700;font-size:19px}
+.logo span{color:var(--acc)}
+.navl{display:flex;gap:20px;font-size:14.5px;font-weight:500}
+.navl a{color:var(--mut);text-decoration:none}.navl a:hover{color:var(--deep2)}
+.navl a.on{color:var(--deep2);font-weight:700}
+.call{display:inline-flex;align-items:center;gap:8px;background:var(--deep2);color:#fff;text-decoration:none;font-weight:600;font-size:14.5px;padding:10px 17px;border-radius:8px;white-space:nowrap}
+@media(max-width:900px){.navl{display:none}}
+.hero{position:relative;background:linear-gradient(155deg,var(--deep),var(--deep2));color:#eef3f8;overflow:hidden}
+.hero::after{content:"";position:absolute;inset:0;opacity:.13;
+  background:repeating-linear-gradient(78deg,transparent 0 38px,rgba(255,255,255,.55) 38px 40px),
+             repeating-linear-gradient(-12deg,transparent 0 38px,rgba(255,255,255,.3) 38px 39px)}
+.heroin{position:relative;z-index:2;display:grid;grid-template-columns:1.06fr .94fr;gap:42px;align-items:center;padding:56px 0 62px}
+@media(max-width:980px){.heroin{grid-template-columns:1fr;gap:28px;padding:38px 0 44px}}
+.eyeb{display:inline-block;font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:var(--acc2);border:1px solid rgba(255,255,255,.28);padding:5px 12px;border-radius:999px;margin-bottom:17px}
+.hero h1{font-size:clamp(31px,5vw,48px);margin-bottom:14px}
+.hero h1 em{font-style:normal;color:var(--acc2)}
+.hero .lede{font-size:17px;color:#c6d3df;max-width:520px}
+.ticks{list-style:none;margin-top:20px;display:grid;gap:9px}
+.ticks li{display:flex;gap:10px;font-size:15.5px;color:#dde6ee}
+.ticks svg{flex:0 0 18px;margin-top:4px;fill:var(--acc2)}
+.form{background:var(--panel);border-radius:14px;padding:24px;box-shadow:0 20px 54px rgba(0,0,0,.3);color:var(--ink)}
+.form h3{font-size:20px;margin-bottom:4px}
+.form .fs{font-size:13.5px;color:var(--mut);margin-bottom:14px}
+label{display:block;font-size:12px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--mut);margin:12px 0 5px}
+select,input{width:100%;font-family:inherit;font-size:15px;color:var(--ink);background:#fbfcfd;border:1px solid var(--line);border-radius:8px;padding:11px 12px}
+select:focus,input:focus{outline:2px solid var(--acc);outline-offset:1px;border-color:transparent}
+.chk{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
+.chk label{display:inline-flex;align-items:center;gap:7px;margin:0;padding:8px 12px;border:1px solid var(--line);border-radius:999px;background:#fbfcfd;font-size:13.5px;font-weight:500;letter-spacing:0;text-transform:none;color:var(--ink);cursor:pointer}
+.chk input{width:auto;padding:0;margin:0}
+.btn{width:100%;margin-top:18px;background:var(--acc);color:#fff;border:0;border-radius:9px;padding:14px;font-family:Bitter,serif;font-size:16px;font-weight:700;cursor:pointer}
+.btn:hover{filter:brightness(.88)}
+.hint{font-size:12px;color:var(--mut);margin-top:10px;text-align:center}
+.out{display:none;margin-top:15px;border-radius:10px;padding:15px 16px;font-size:14.5px;border:1px solid}
+.out.show{display:block}
+.out b{display:block;font-family:Bitter,serif;font-size:16.5px;margin-bottom:5px}
+.o-hi{background:#eef6f0;border-color:#bedcc6;color:#1d5734}
+.o-md{background:#fdf6ea;border-color:#ecdcb2;color:#775413}
+.o-lo{background:#f3f5f7;border-color:#dde2e7;color:#48515a}
+.o-urg{background:#fdeeee;border-color:#f0c6c4;color:#8a1c1c}
+.trust{background:#0e141a;color:#b6c2cd;padding:15px 0}
+.trustin{display:flex;flex-wrap:wrap;justify-content:center;gap:11px 34px;font-size:13.5px}
+.trustin b{color:var(--acc2);font-weight:700}
+section{padding:58px 0}
+.sh{text-align:center;max-width:680px;margin:0 auto 34px}
+.sh .kick{font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--acc);font-weight:700;margin-bottom:10px}
+.sh h2{font-size:clamp(25px,3.4vw,33px);margin-bottom:11px}
+.sh p{color:var(--mut);font-size:16.5px}
+.band{background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:17px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:13px;overflow:hidden}
+.ctop{height:100px;position:relative;background:linear-gradient(140deg,var(--deep),var(--deep2))}
+.ctop::after{content:"";position:absolute;inset:0;opacity:.24;background:repeating-linear-gradient(78deg,transparent 0 15px,rgba(255,255,255,.5) 15px 16px)}
+.cbody{padding:17px}.cbody h3{font-size:18px;margin-bottom:6px}
+.cbody p{font-size:14.5px;color:var(--mut)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media(max-width:820px){.two{grid-template-columns:1fr}}
+.box{background:var(--panel);border:1px solid var(--line);border-radius:13px;padding:24px}
+.box.pri{background:linear-gradient(160deg,var(--deep),var(--deep2));color:#eef3f8;border-color:var(--deep2)}
+.box h3{font-size:20px;margin-bottom:10px}
+.box ul{margin:0 0 0 19px;font-size:15px;color:var(--mut)}
+.box.pri ul{color:#c6d3df}
+.box li{margin-bottom:8px}
+.tagp{display:inline-block;font-size:11px;letter-spacing:.11em;text-transform:uppercase;font-weight:700;background:var(--acc2);color:#0e1a26;padding:4px 10px;border-radius:999px;margin-bottom:12px}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(205px,1fr));gap:16px}
+.fact{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:20px}
+.fact .k{font-size:11.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--mut);font-weight:700;margin-bottom:7px}
+.fact .v{font-family:Bitter,serif;font-size:22px;font-weight:700;color:var(--deep2)}
+.fact .n{font-size:13.5px;color:var(--mut);margin-top:5px}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:22px;counter-reset:s}
+.step{counter-increment:s;position:relative;padding-left:50px}
+.step::before{content:counter(s);position:absolute;left:0;top:0;width:37px;height:37px;border-radius:50%;background:var(--deep2);color:#fff;font-family:Bitter,serif;font-weight:700;font-size:17px;display:grid;place-items:center}
+.step h3{font-size:17.5px;margin-bottom:5px}.step p{font-size:14.5px;color:var(--mut)}
+.revs{display:grid;grid-template-columns:repeat(auto-fit,minmax(268px,1fr));gap:17px}
+.rev{background:var(--panel);border:1px solid var(--line);border-radius:13px;padding:20px}
+.stars{color:#e0a32e;font-size:15.5px;letter-spacing:2px}
+.rev p{font-size:14.8px;color:var(--mut);margin:9px 0 12px;font-style:italic}
+.rev .who{font-size:13.5px;font-weight:700}
+.rev .who span{display:block;font-weight:400;color:var(--mut);font-size:12.5px;margin-top:2px}
+.ratebar{display:flex;align-items:center;justify-content:center;gap:14px;margin-bottom:28px;flex-wrap:wrap}
+.ratebig{font-family:Bitter,serif;font-size:42px;font-weight:700;color:var(--deep2)}
+.ratetxt{font-size:14.5px;color:var(--mut);text-align:left}
+.badges{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.bdg{background:var(--panel);border:1px dashed #b9c3d1;border-radius:11px;padding:14px 20px;text-align:center;min-width:140px}
+.bdg b{display:block;font-family:Bitter,serif;font-size:16px;color:var(--deep2)}
+.bdg span{font-size:11.5px;color:var(--mut);letter-spacing:.05em;text-transform:uppercase}
+.areas{display:flex;flex-wrap:wrap;gap:9px;justify-content:center;margin-top:20px}
+.areas span{background:var(--panel);border:1px solid var(--line);border-radius:999px;padding:8px 15px;font-size:14px;color:var(--mut)}
+.cta2{background:linear-gradient(155deg,var(--deep),var(--deep2));color:#eef3f8;text-align:center;padding:58px 0}
+.cta2 h2{font-size:clamp(25px,3.4vw,33px);margin-bottom:11px}
+.cta2 p{color:#c6d3df;font-size:16.5px;max-width:560px;margin:0 auto 22px}
+.cta2 .call{font-size:16px;padding:14px 26px;background:var(--acc2);color:#0e1a26}
+footer{background:#0b1016;color:#87929d;font-size:13.5px;padding:32px 0}
+.fgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:24px}
+footer h4{color:#e7edf3;font-size:12.5px;letter-spacing:.11em;text-transform:uppercase;margin-bottom:10px}
+footer a{color:#87929d;text-decoration:none;display:block;margin-bottom:6px}
+footer a:hover{color:var(--acc2)}
+.fnote{border-top:1px solid #1b232c;padding-top:18px;margin-top:20px;font-size:12.5px;color:#6b7681;line-height:1.65}
+a:focus-visible,button:focus-visible,select:focus-visible,input:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+</style>
+<style>
+.hero{background:linear-gradient(150deg,rgba(9,18,28,.94),rgba(16,40,58,.78)),url('img/g2.jpg') center 50%/cover}
+.hero::after{opacity:.05}
+.ctop{background-size:cover;background-position:center;height:190px}
+@media(max-width:700px){.ctop{height:160px}}
+.ctop::after{opacity:.1}
+.gal{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:13px}
+.gal div{aspect-ratio:7/5;border-radius:12px;background-size:cover;background-position:center;border:1px solid var(--line)}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:center}
+@media(max-width:820px){.split{grid-template-columns:1fr;gap:22px}}
+.split .pic{aspect-ratio:7/5;border-radius:14px;background-size:cover;background-position:center}
+.cta2{background:linear-gradient(150deg,rgba(9,18,28,.94),rgba(16,40,58,.86)),url('img/g5.jpg') center 50%/cover}
+.nicei{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);border-radius:8px;padding:7px 13px;font-size:13.5px;font-weight:600;margin-top:16px}
+.fillme{background:rgba(233,178,58,.12);border:1px dashed var(--acc);border-radius:10px;padding:13px 16px;margin:14px 0;font-size:14.5px;color:var(--ink)}
+.fillme b{color:var(--acc)}
+.faqs{max-width:820px;margin:0 auto}
+.faq{background:var(--panel);border:1px solid var(--line);border-radius:12px;margin-bottom:10px;overflow:hidden}
+.faq summary{cursor:pointer;list-style:none;padding:16px 18px;font-weight:600;font-size:16px;display:flex;justify-content:space-between;gap:14px;align-items:center}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-size:22px;color:var(--acc);font-weight:400;line-height:1}
+.faq[open] summary::after{content:"\2212"}
+.faq p{padding:0 18px 16px;color:var(--mut);font-size:15px;margin:0}
+.callbar{display:none}
+@media(max-width:820px){
+ .callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:90;background:var(--deep2);color:#fff;align-items:center;justify-content:center;gap:10px;padding:13px;font-weight:700;font-size:16px;text-decoration:none;box-shadow:0 -4px 18px rgba(0,0,0,.28)}
+ body{padding-bottom:56px}
+}
+</style>
+
+<div class="demobar">This is a <b>concept recruitment page</b> built by AG1 Consulting for Empire Roofing Systems Ltd. It is not a live site, it is <b>not a real job advertisement</b>, and no form on it sends anywhere.</div>
+
+<nav>
+  <div class="wrap navin">
+    <div class="logo">Empire <span>Roofing Systems</span></div>
+    <div class="navl">
+      <a href="#roles" class="on">The Roles</a>
+      <a href="#why">Why Empire</a>
+      <a href="#work">The Work</a>
+      <a href="#faq">Questions</a>
+    </div>
+    <a class="call" href="tel:+447788798466">&#9742; 07788 798 466</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap heroin">
+    <div>
+      <div class="eyeb">Now Hiring &middot; Kettering &middot; Birmingham &middot; London</div>
+      <h1>Flat roofers wanted. <em>Name and a number is all we need.</em></h1>
+      <p class="lede">No CV. No covering letter. No online account to set up. Leave your name and a
+      number and somebody will ring you back &mdash; usually the same day, and you will be speaking to
+      someone who knows what a warm roof is.</p>
+      <ul class="ticks">
+        <li><svg viewBox="0 0 20 20" width="18" height="18"><path d="M7.6 14.2 3.4 10l1.4-1.4 2.8 2.8 7.6-7.6L16.6 5z"/></svg><span>NFRC member firm &mdash; standards are the point, not an inconvenience</span></li>
+        <li><svg viewBox="0 0 20 20" width="18" height="18"><path d="M7.6 14.2 3.4 10l1.4-1.4 2.8 2.8 7.6-7.6L16.6 5z"/></svg><span>Commercial and industrial contracts, not just chasing domestic call-outs</span></li>
+        <li><svg viewBox="0 0 20 20" width="18" height="18"><path d="M7.6 14.2 3.4 10l1.4-1.4 2.8 2.8 7.6-7.6L16.6 5z"/></svg><span>Three regions of work &mdash; it does not dry up when one does</span></li>
+        <li><svg viewBox="0 0 20 20" width="18" height="18"><path d="M7.6 14.2 3.4 10l1.4-1.4 2.8 2.8 7.6-7.6L16.6 5z"/></svg><span>Manufacturer-approved systems and the training that comes with them</span></li>
+      </ul>
+      <div class="nicei">&#9873; Experienced roofers and improvers both welcome</div>
+    </div>
+
+    <form class="form" id="apply" onsubmit="return route(event)">
+      <h3>Leave your number</h3>
+      <div class="fs">Two questions and a phone number. That is the whole application.</div>
+
+      <label for="exp">What do you do now?</label>
+      <select id="exp">
+        <option value="">Choose one&hellip;</option>
+        <option value="felt">Built-up felt / warm roofs</option>
+        <option value="liquid">Liquid coating systems</option>
+        <option value="single">Single ply or flat roofing generally</option>
+        <option value="pitched">Pitched roofing, want to move to flat</option>
+        <option value="improver">Labourer or improver &mdash; want to learn</option>
+        <option value="other">Another trade entirely</option>
+      </select>
+
+      <label for="area">Where are you based?</label>
+      <select id="area">
+        <option value="">Choose one&hellip;</option>
+        <option value="ket">Kettering / Northamptonshire</option>
+        <option value="bham">Birmingham / West Midlands</option>
+        <option value="lon">London</option>
+        <option value="else">Somewhere else</option>
+      </select>
+
+      <label>When could you start?</label>
+      <div class="chk">
+        <label><input type="radio" name="u" checked> Just looking</label>
+        <label><input type="radio" name="u"> A few weeks</label>
+        <label><input type="radio" name="u"> Straight away</label>
+      </div>
+
+      <label for="nm">Your name</label>
+      <input id="nm" placeholder="First name is fine">
+
+      <label for="ph">Your number</label>
+      <input id="ph" placeholder="07000 000000">
+
+      <button class="btn" type="submit">Ask us to call you</button>
+      <div class="hint">We will not pass your number to anybody else, and we will not ring your current employer.</div>
+
+      <div class="out" id="out"></div>
+    </form>
+  </div>
+</header>
+
+<div class="trust">
+  <div class="wrap trustin">
+    <div><b>NFRC</b> member firm</div>
+    <div><b>3 regions</b> of work</div>
+    <div><b>No CV</b> needed</div>
+    <div><b>Same-day</b> callback</div>
+    <div><b>Improvers</b> considered</div>
+  </div>
+</div>
+
+<section id="roles">
+  <div class="wrap">
+    <div class="sh">
+      <div class="kick">The roles</div>
+      <h2>We are hiring across all three of our businesses</h2>
+      <p>If you are good at this and tired of being treated like you are not, this is worth ten minutes of your time.</p>
+    </div>
+    <div class="two">
+      <div class="box pri">
+        <div class="tagp">Experienced flat roofers</div>
+        <h3>You already know the job</h3>
+        <ul>
+          <li>Built-up felt, torch-on or flame-free &mdash; or liquid systems</li>
+          <li>You care what the detailing looks like when nobody is checking</li>
+          <li>You can be trusted on a commercial site without being watched</li>
+          <li>Driving licence helps, is not essential everywhere</li>
+        </ul>
+      </div>
+      <div class="box">
+        <div class="tagp">Improvers &amp; labourers</div>
+        <h3>You want to learn it properly</h3>
+        <ul>
+          <li>Some site experience, in any trade</li>
+          <li>You turn up, on time, without being chased</li>
+          <li>You would rather be taught than handed a torch and left</li>
+          <li>We will put you with someone who actually explains things</li>
+        </ul>
+      </div>
+    </div>
+    <div class="fillme">
+      <b>&#9888; Note for Empire, not for applicants:</b> this is where the <b>day rate or salary band
+      goes</b>, plus the van, fuel card, holiday, pension, overtime and any tickets you pay for. We have
+      deliberately left it blank rather than invent it. <b>Adverts that state a rate consistently
+      outperform ones that say "competitive"</b> &mdash; a roofer who has to ring to find out what you
+      pay usually does not ring. Tell us your numbers and they go straight in here.
+    </div>
+  </div>
+</section>
+
+<section class="band" id="why">
+  <div class="wrap">
+    <div class="sh">
+      <div class="kick">Why here</div>
+      <h2>What makes this a better seat than the one you are in</h2>
+    </div>
+    <div class="cards">
+      <div class="card"><div class="ctop" style="background-image:url('img/commercial.jpg')"></div><div class="cbody">
+        <h3>Real commercial contracts</h3>
+        <p>Warehouses, units, offices and managed blocks. Proper roofs with proper programmes, not a scramble from one domestic patch-up to the next.</p></div></div>
+      <div class="card"><div class="ctop" style="background-image:url('img/flat.jpg')"></div><div class="cbody">
+        <h3>Work that does not stop</h3>
+        <p>Three offices across Kettering, Birmingham and London. When one region goes quiet, the others do not.</p></div></div>
+      <div class="card"><div class="ctop" style="background-image:url('img/g1.jpg')"></div><div class="cbody">
+        <h3>An NFRC member firm</h3>
+        <p>We are members of the National Federation of Roofing Contractors. It means the standards are real and you will not be asked to cut corners.</p></div></div>
+      <div class="card"><div class="ctop" style="background-image:url('img/green.jpg')"></div><div class="cbody">
+        <h3>Systems worth learning</h3>
+        <p>Built-up felt, flame-free, liquid coatings and green roofs, on manufacturer-approved systems. The tickets you pick up here travel with you.</p></div></div>
+      <div class="card"><div class="ctop" style="background-image:url('img/g3.jpg')"></div><div class="cbody">
+        <h3>Guarantees we stand behind</h3>
+        <p>We offer up to thirty years on some systems. That only works if the work is right first time, which is why we care who we put on a roof.</p></div></div>
+      <div class="card"><div class="ctop" style="background-image:url('img/g4.jpg')"></div><div class="cbody">
+        <h3>You will not be a number</h3>
+        <p>You will know who you report to and they will know your name. Ring the number on this page and you will speak to someone from the firm.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap">
+    <div class="sh">
+      <div class="kick">The work</div>
+      <h2>These are our roofs. This is what you would be standing on.</h2>
+      <p>Every picture here is our own work, including our drone survey shots.</p>
+    </div>
+    <div class="gal">
+      <div style="background-image:url('img/g2.jpg')"></div>
+      <div style="background-image:url('img/commercial.jpg')"></div>
+      <div style="background-image:url('img/flat.jpg')"></div>
+      <div style="background-image:url('img/g5.jpg')"></div>
+      <div style="background-image:url('img/g1.jpg')"></div>
+      <div style="background-image:url('img/g3.jpg')"></div>
+      <div style="background-image:url('img/g6.jpg')"></div>
+      <div style="background-image:url('img/green.jpg')"></div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="sh">
+      <div class="kick">What happens next</div>
+      <h2>Four steps, and none of them involve a portal</h2>
+    </div>
+    <div class="steps">
+      <div class="step"><h3>You leave a number</h3><p>Name, roughly what you do now, and where you are. That is it.</p></div>
+      <div class="step"><h3>We ring you back</h3><p>Usually the same day. A real conversation about the work and what you are looking for.</p></div>
+      <div class="step"><h3>You come and see a job</h3><p>Meet whoever you would be working with and look at a live roof. You are deciding about us as much as we are about you.</p></div>
+      <div class="step"><h3>We agree and you start</h3><p>Everything agreed in writing before your first day, so there are no surprises in week one.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="sh">
+      <div class="kick">Straight answers</div>
+      <h2>What roofers ask before they ring</h2>
+    </div>
+    <div class="faqs">
+      <details class="faq"><summary>Will you contact my current employer?</summary><p>No. Not unless and until you tell us to, and never before you have accepted something. Everyone who applies is currently working somewhere and we are not going to make that awkward for you.</p></details>
+      <details class="faq"><summary>I have not got a CV. Does that matter?</summary><p>Not at all. We are not going to learn anything about whether you can lay a roof from a Word document. Leave a number and we will have a conversation instead.</p></details>
+      <details class="faq"><summary>I do pitched roofing, not flat. Should I still ring?</summary><p>Yes. If you have roofing experience and you want to move into flat systems, say so on the call. Plenty of good flat roofers started somewhere else.</p></details>
+      <details class="faq"><summary>I am an improver rather than a time-served roofer.</summary><p>Still ring. We are hiring improvers as well, and we will put you alongside somebody who explains what they are doing rather than leaving you to guess.</p></details>
+      <details class="faq"><summary>Which areas are you hiring in?</summary><p>Kettering and Northamptonshire, Birmingham and the West Midlands, and London. Tell us where you are and we will tell you what is running near you.</p></details>
+      <details class="faq"><summary>How quickly will I hear back?</summary><p>We aim to ring the same day, and we would rather ring you and say "not right now" than leave you wondering. Nobody who applies gets ignored.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="cta2">
+  <div class="wrap">
+    <h2>Name and a number. That is the whole application.</h2>
+    <p>Experienced flat roofers and improvers, across Kettering, Birmingham and London.</p>
+    <a class="call" href="tel:+447788798466">&#9742; Call or text 07788 798 466</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <h4>Empire Roofing Systems</h4>
+        <a href="tel:+447788798466">07788 798 466</a>
+        <a href="tel:+441536520908">Kettering &mdash; 01536 520 908</a>
+        <a href="#top">NFRC member</a>
+      </div>
+      <div>
+        <h4>Hiring in</h4>
+        <a href="#roles">Kettering</a>
+        <a href="#roles">Birmingham</a>
+        <a href="#roles">London</a>
+      </div>
+      <div>
+        <h4>Roles</h4>
+        <a href="#roles">Experienced flat roofers</a>
+        <a href="#roles">Improvers &amp; labourers</a>
+      </div>
+      <div>
+        <h4>Questions</h4>
+        <a href="#faq">Do I need a CV?</a>
+        <a href="#faq">Will you call my employer?</a>
+        <a href="#why">Why Empire</a>
+      </div>
+    </div>
+    <div class="fnote">
+      <b>Concept demonstration &mdash; not a live website and not a real job advertisement.</b> This
+      page was produced by AG1 Consulting to show Empire Roofing Systems Ltd what a recruitment landing
+      page could look like. <b>No vacancy described here has been confirmed to exist, no form on this
+      page submits anywhere, nobody will be contacted, and nothing on this page should be relied upon
+      by any person as an offer or advertisement of employment.</b> The company name, telephone
+      numbers, the NFRC reference, the 10&ndash;30 year guarantee range, the roofing systems listed and
+      all photography are taken from Empire Roofing Systems' own published website and remain their
+      property. <b>Everything else on this page &mdash; the roles, the descriptions of the work, the
+      reasons given to join, the four-step process and every FAQ answer &mdash; is illustrative wording
+      written by AG1 to demonstrate the layout. None of it has been confirmed with Empire Roofing
+      Systems and none of it represents a commitment the business has made.</b> In particular,
+      statements about calling applicants back the same day, not contacting a current employer, meeting
+      the team on site, and agreeing terms in writing are <b>example copy, not undertakings given by
+      Empire Roofing Systems.</b> <b>No rate of pay, salary, van, fuel card, holiday entitlement,
+      pension, overtime rate, bonus, training, ticket, qualification or any other term or benefit of
+      employment is stated, offered or implied anywhere on this page</b>, and the highlighted note in
+      the roles section is addressed to Empire Roofing Systems, not to any applicant. <b>Nothing here
+      constitutes employment, HR or legal advice</b>, and AG1 Consulting is not acting as an employment
+      agency or employment business. <b>No prices, ratings, review counts or testimonials appear
+      anywhere on this page.</b> NFRC membership is reported because Empire states it on its own
+      website and has not been verified against the NFRC register.
+    </div>
+  </div>
+</footer>
+
+<script>
+function route(e){
+  e.preventDefault();
+  var x=document.getElementById('exp').value,
+      a=document.getElementById('area').value,
+      o=document.getElementById('out'),
+      n=(document.getElementById('nm').value||'').trim().replace(/[<>]/g,'');
+  var m={
+    felt:['o-hi','Built-up felt &mdash; that is exactly what we do','Most of our work is felt and warm roofs, so your experience lands straight in. We will talk about the systems you have used when we ring.'],
+    liquid:['o-hi','Liquid systems &mdash; useful','We use liquid coatings on complex roofs with a lot of detail. Tell us which systems you have worked with.'],
+    single:['o-hi','Flat roofing experience','Good. The systems differ but the thinking is the same. We will go through what you have done on the call.'],
+    pitched:['o-md','Pitched to flat &mdash; very doable','Plenty of our roofers started on pitched. If you want to make the move, say so when we ring.'],
+    improver:['o-md','Improvers welcome','We are hiring improvers as well as time-served roofers. You would be put with somebody who explains what they are doing.'],
+    other:['o-lo','Another trade','Worth a conversation. Tell us what you do now and we will be straight with you about whether it transfers.']
+  };
+  var r=m[x]||['o-lo','Thanks','Leave your number and we will ring you for a proper conversation.'];
+  var where='';
+  if(a==='ket') where=' <span style="display:block;margin-top:8px">Kettering is our head office, so there is usually something running nearby.</span>';
+  else if(a==='bham') where=' <span style="display:block;margin-top:8px">We have a Birmingham office and work across the West Midlands.</span>';
+  else if(a==='lon') where=' <span style="display:block;margin-top:8px">We have a London office and work across the capital.</span>';
+  else if(a==='else') where=' <span style="display:block;margin-top:8px">Tell us where you are on the call &mdash; we cover more ground than the three office locations.</span>';
+  o.className='out show '+r[0];
+  o.innerHTML='<b>'+(n?n+' &mdash; ':'')+r[1]+'</b>'+r[2]+where+'<span style="display:block;margin-top:8px;opacity:.85">We will ring you back &mdash; or call us now on 07788 798 466</span>';
+  o.scrollIntoView({behavior:'smooth',block:'nearest'});
+  return false;
+}
+</script>
+
+<a class="callbar" href="tel:+447788798466">&#9742; Call or text 07788 798 466</a>
